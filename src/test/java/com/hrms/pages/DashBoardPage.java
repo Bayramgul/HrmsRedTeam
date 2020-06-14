@@ -17,7 +17,8 @@ public class DashBoardPage extends com.hrms.utils.CommonMethods {
 		@FindBy(id="menu_pim_viewPimModule")
 		public WebElement pim;
 		
-		
+		@FindBy(linkText="Admin")
+		public WebElement Admin;
 		@FindBy(id="menu_pim_viewEmployeeList")
 		public WebElement empListPage;
 		

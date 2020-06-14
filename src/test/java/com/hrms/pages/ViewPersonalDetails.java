@@ -87,9 +87,17 @@ public class ViewPersonalDetails {
 	
 	@FindBy(id = "personal_chkSmokeFlag")
 	public WebElement smoker;
+	
 	@FindBy(id = "personal_txtMilitarySer")
 	public WebElement militaryServce;
-
+	
+	@FindBy(linkText = "Memberships")
+	public WebElement linkMemberships;
+	
+	@FindBy(id = "btnAddMembershipDetail")
+	public WebElement btnAddMembershipDetail;
+	
+	
 	public ViewPersonalDetails() {
 		PageFactory.initElements(BaseClass.driver, this);
 	}

@@ -1,11 +1,13 @@
 package com.hrms.testbase;
 
 import com.hrms.pages.AddEmployeePage;
+import com.hrms.pages.AddMembershipsPage;
 import com.hrms.pages.DashBoardPage;
 import com.hrms.pages.EmployeeListPage;
 import com.hrms.pages.LoginPageElemements;
 import com.hrms.pages.PredefinedReportPage;
 import com.hrms.pages.ViewPersonalDetails;
+import com.hrms.pages.ViewSystemUsersPage;
 import com.hrms.pages.sauceDemoLoginPage;
 
 public class PageInitializer extends BaseClass {
@@ -16,6 +18,8 @@ public class PageInitializer extends BaseClass {
 	public static sauceDemoLoginPage demosauce;
 	public static EmployeeListPage empList;
 	public static PredefinedReportPage reports;
+	public static ViewSystemUsersPage systemUsers;
+	public static AddMembershipsPage membership;
 	public static void initialize() {
 		login = new LoginPageElemements();
 		dashboard = new DashBoardPage();
@@ -24,6 +28,8 @@ public class PageInitializer extends BaseClass {
 		demosauce = new sauceDemoLoginPage();
 		empList=new EmployeeListPage();
 		reports=new PredefinedReportPage();
+		systemUsers=new ViewSystemUsersPage();
+		membership=new AddMembershipsPage();
 	}
 
 }

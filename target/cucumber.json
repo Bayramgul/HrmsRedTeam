@@ -1,0 +1,98 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-14T06:32:54.043Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.hrms.steps.Hooks.start()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "As an admin user should be able to add different memberships under qualifications",
+        "description": "",
+        "id": "add-membership;as-an-admin-user-should-be-able-to-add-different-memberships-under-qualifications",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.hrms.steps.Hooks.end(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user should be able to login with valid admin credentials",
+            "match": {
+              "location": "com.hrms.steps.AddMembership.user_should_be_able_to_login_with_valid_admin_credentials()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user clicks on \"Admin\" tab on Dashboard page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.hrms.steps.AddMembership.user_clicks_on_tab(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user clicks on \"Qualifications\" dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Qualifications\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.hrms.steps.AddMembership.user_clicks_on_dropdown(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@addMembership"
+          }
+        ]
+      }
+    ],
+    "name": "Add membership",
+    "description": "",
+    "id": "add-membership",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/addMembership.feature",
+    "tags": []
+  }
+]

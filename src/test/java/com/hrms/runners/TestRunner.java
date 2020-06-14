@@ -6,7 +6,18 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(feature=
+@CucumberOptions(features="src/test/resources/features/",
+				glue="com.hrms.steps",
+				dryRun=true,
+				monochrome=true,
+				strict=false,
+				tags="@addMembership",
+				plugin= {
+						"pretty",
+						"html:target/default-html-report",
+						"json:target/cucumber.json",
+						"rerun:target/failed.txt"
+}
 		)
 
 public class TestRunner {

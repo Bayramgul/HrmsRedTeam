@@ -69,7 +69,7 @@ public class EmployeeListPage extends com.hrms.utils.CommonMethods {
 	@FindBy(xpath = "//table[@id='resultTable']/tbody/tr")
 	public List <WebElement> tableRow;
 	
-	@FindBy(xpath = "//table[@id='resultTable']//tbody//tr[1]//td[2]")
+	@FindBy(xpath = "//table[@id='resultTable']//tbody//tr[1]//td[2]//a")
 	public WebElement empIDValidation;// employee comes after searching By Id
 	
 	@FindBy(xpath = "//table[@id='resultTable']//tbody//tr[1]//td[3]")
