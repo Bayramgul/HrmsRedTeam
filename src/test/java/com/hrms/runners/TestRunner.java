@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 				//dryRun=true,
 				monochrome=true,
 				strict=false,
-				tags="@userStory12",
+				tags="@addMembership",
 				plugin= {
 						"pretty",
 						"html:target/default-html-report",

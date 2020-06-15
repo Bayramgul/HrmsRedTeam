@@ -41,6 +41,8 @@ public class ViewSystemUsersPage extends CommonMethods {
 	@FindBy(xpath = "//table[@id='resultTable']/tbody/tr/td[2]/a")
 	public List<WebElement> resulTable;
 	
+
+	
 	public ViewSystemUsersPage() {
 		PageFactory.initElements(driver, this);
 	}
