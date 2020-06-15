@@ -8,10 +8,10 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/resources/features/",
 				glue="com.hrms.steps",
-				dryRun=true,
+				//dryRun=true,
 				monochrome=true,
 				strict=false,
-				tags="@addMembership",
+				tags="@userStory12",
 				plugin= {
 						"pretty",
 						"html:target/default-html-report",
