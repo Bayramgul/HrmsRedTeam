@@ -7,11 +7,11 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/resources/features/",
-				glue="com.hrms.step",
-				dryRun=true,
+				glue="com.hrms.steps",
+				dryRun=false,
 				monochrome=true,
 				strict=false,
-				tags="@smoke",
+				tags="@UserStrory_11",
 				plugin= {
 						"pretty",
 						"html:target/default-html-report",
